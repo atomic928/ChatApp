@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BDB6421328C5E1AD009B94C3 /* UIColor-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB6421228C5E1AD009B94C3 /* UIColor-Extension.swift */; };
 		BDD5562328C46C0F005228C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD5562228C46C0F005228C8 /* AppDelegate.swift */; };
 		BDD5562528C46C0F005228C8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD5562428C46C0F005228C8 /* SceneDelegate.swift */; };
 		BDD5562C28C46C10005228C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDD5562B28C46C10005228C8 /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BDB6421228C5E1AD009B94C3 /* UIColor-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor-Extension.swift"; sourceTree = "<group>"; };
 		BDD5561F28C46C0F005228C8 /* App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDD5562228C46C0F005228C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BDD5562428C46C0F005228C8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 				BDD5562B28C46C10005228C8 /* Assets.xcassets */,
 				BDD5562D28C46C10005228C8 /* LaunchScreen.storyboard */,
 				BDD5563028C46C10005228C8 /* Info.plist */,
+				BDB6421228C5E1AD009B94C3 /* UIColor-Extension.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -155,6 +158,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BDD5562328C46C0F005228C8 /* AppDelegate.swift in Sources */,
+				BDB6421328C5E1AD009B94C3 /* UIColor-Extension.swift in Sources */,
 				BDD5563928C48421005228C8 /* ChatListViewController.swift in Sources */,
 				BDD5562528C46C0F005228C8 /* SceneDelegate.swift in Sources */,
 			);
