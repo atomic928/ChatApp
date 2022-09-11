@@ -93,15 +93,19 @@
             </objects>
             <point key="canvasLocation" x="928.98550724637687" y="83.705357142857139"/>
         </scene>
-        <!--Item-->
+        <!--メッセージ-->
         <scene sceneID="QQj-xG-pV1">
             <objects>
                 <navigationController id="0Yb-Ue-SQb" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="fyE-wb-ZcC"/>
+                    <tabBarItem key="tabBarItem" title="メッセージ" image="message" catalog="system" id="fyE-wb-ZcC"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Df9-uQ-haN">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Eda-b8-YBf">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="KGY-Qs-Zkn"/>
                     </connections>
@@ -110,17 +114,35 @@
             </objects>
             <point key="canvasLocation" x="202.89855072463769" y="83.705357142857139"/>
         </scene>
+        <!--トラッキング-->
+        <scene sceneID="Ecw-5v-fhZ">
+            <objects>
+                <viewController id="unx-oc-S61" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Vdi-8E-ujG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="r9v-d7-CsE"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="トラッキング" image="camera" catalog="system" id="B3f-50-G5B"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FJF-7t-qPa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-5" y="1026"/>
+        </scene>
         <!--Main Tab Bar Controller-->
         <scene sceneID="CK0-t7-fCd">
             <objects>
                 <tabBarController storyboardIdentifier="MainTabBarController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="MPW-k5-jeJ" customClass="MainTabBarController" customModule="App" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qvB-NT-76X">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <segue destination="0Yb-Ue-SQb" kind="relationship" relationship="viewControllers" id="uZL-TQ-Rql"/>
+                        <segue destination="unx-oc-S61" kind="relationship" relationship="viewControllers" id="Vkx-4k-glg"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gWh-z0-b6g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -129,6 +151,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="camera" catalog="system" width="128" height="94"/>
+        <image name="message" catalog="system" width="128" height="113"/>
         <image name="スクリーンショット 2022-09-05 16.59.44" width="130" height="112"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

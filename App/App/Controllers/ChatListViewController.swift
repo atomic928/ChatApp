@@ -19,7 +19,11 @@ class ChatListViewController: UIViewController {
         chatListTableView.delegate = self
         chatListTableView.dataSource = self
         
+        let height: CGFloat = -100
+        let bounds = self.navigationController!.navigationBar.bounds
+        
         navigationController?.navigationBar.barTintColor = .rgb(red: 39, green: 49, blue: 69)
+        navigationController?.navigationBar.frame = CGRect(x: 0, y: 0, width: bounds.width, height: bounds.height + height)
         navigationItem.title = "トーク"
         navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
     }
